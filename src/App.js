@@ -52,6 +52,12 @@ function App() {
           <input type="text" className="field_two" />
         </form>
       </div>
+      <div className="upload">
+        <form>
+          <input type="file" id="input" multiple />
+          <button type="submit">Absenden</button>
+        </form>
+      </div>
     </div>
   );
 }
