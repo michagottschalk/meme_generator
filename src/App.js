@@ -1,5 +1,6 @@
 import "./App.css";
 import { useState, useEffect } from "react";
+import Upload from "./upload";
 
 function App() {
   const [meme, setMeme] = useState([]);
@@ -52,11 +53,8 @@ function App() {
           <input type="text" className="field_two" />
         </form>
       </div>
-      <div className="upload">
-        <form>
-          <input type="file" id="input" multiple />
-          <button type="submit">Absenden</button>
-        </form>
+      <div>
+        <Upload />
       </div>
     </div>
   );
